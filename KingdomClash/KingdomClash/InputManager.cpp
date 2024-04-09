@@ -7,6 +7,6 @@ void InputManager::Init(HWND hwnd)
 
 void InputManager::Update()
 {
-	::GetKeyboardState();
+	//::GetKeyboardState();
 
 }

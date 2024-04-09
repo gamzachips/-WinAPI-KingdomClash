@@ -1,5 +1,4 @@
-﻿// KingdomClash.cpp : 애플리케이션에 대한 진입점을 정의합니다.
-//
+﻿
 #include "pch.h"
 #include "framework.h"
 #include "KingdomClash.h"
@@ -11,7 +10,6 @@
 HINSTANCE hInst;     
 HWND g_hWnd;
 
-// 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -106,7 +104,6 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    return TRUE;
 }
 
-
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
@@ -123,14 +120,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             default:
                 return ::DefWindowProc(hWnd, message, wParam, lParam);
             }
-        }
-        break;
-    case WM_PAINT:
-        {
-            PAINTSTRUCT ps;
-            HDC hdc = ::BeginPaint(hWnd, &ps);
-
-            ::EndPaint(hWnd, &ps);
         }
         break;
     
