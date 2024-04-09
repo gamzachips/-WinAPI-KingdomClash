@@ -43,13 +43,13 @@ void Game::Update()
 
 void Game::Render()
 {
-	uint32 fps = GET_SINGLE(TimeManager)->GetFps();
+	/*uint32 fps = GET_SINGLE(TimeManager)->GetFps();
 	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 	WCHAR buffer[100];
 	int bIdx = 0;
 	bIdx = swprintf(buffer, 100, L"fps: %d   ", fps);
 	bIdx += swprintf(buffer + bIdx, 100, L"DT: %d", static_cast<int>(deltaTime * 1000));
-	::TextOut(_hdcBack, 1300, 10, buffer, bIdx);
+	::TextOut(_hdcBack, 1300, 10, buffer, bIdx);*/
 
 	GET_SINGLE(SceneManager)->Render(_hdcBack);
 

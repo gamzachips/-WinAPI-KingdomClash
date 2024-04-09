@@ -1,7 +1,7 @@
 ﻿
 #include "pch.h"
 #include "framework.h"
-#include "KingdomClash.h"
+#include "KingsAndPigs.h"
 #include "Game.h"
 
 #define MAX_LOADSTRING 100

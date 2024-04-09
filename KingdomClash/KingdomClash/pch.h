@@ -1,15 +1,17 @@
 #pragma once
 
-#include "Types.h"
-#include "Defines.h"
-#include "Enums.h"
 #include <windows.h>
 #include <wchar.h>
 #include <string>
 #include <format>
 
-using namespace std;
+#include "Types.h"
+#include "Defines.h"
+#include "Enums.h"
 
+#include "TimeManager.h"
+
+using namespace std;
 
 #include <vector>
 
